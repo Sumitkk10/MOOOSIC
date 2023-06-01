@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Certified Lover Boy</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="shortcut icon" href="logo.png">
+    <style>
+        /* Center the images */
+        .albums {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+    .album {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .album img {
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        cursor: pointer;
+        object-fit: cover;
+    }
+
+    .album p {
+        margin-top: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #faea35;
+    }
+
+    .album {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .album img {
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        cursor: pointer;
+        object-fit: cover;
+    }
+
+    .album p {
+        margin-top: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #faea35;
+    }
+
+    .album a{
+            text-decoration: none;
+        }
+</style>
+</head>
+
+
+<body style="padding-bottom: 0%;">
+  <style>
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+    img {
+        max-width: 100%
+    }
+    .image {
+        flex-basis: 40%
+    }
+    .text {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+</style>
+<nav>
+    <div class="logo">
+        <div class="container">
+            <div class="image">
+                <img src = "logo.png" width="40">
+            </div>
+            <div class="text">
+                <h1> MOOOSIC </h1>
+            </div>
+        </div>
+    </div>
+    <div>
+        <a href="index.html">Home</a>
+        <a class="active" href="artists.html">Artists Page</a>
+        <a href="fav-artist.html">Artist's Spotlight</a>
+        <a href="search.html"> Search </a>
+        <a href="about.html">About</a>
+        <a href="playlist.html">Playlist</a>
+    </div>
+</nav>
+
+    <div class="albums">
+        <div class="album">
+            <img src="https://upload.wikimedia.org/wikipedia/en/7/79/Drake_-_Certified_Lover_Boy.png" alt="Certified Lover Boy">
+            <p>Certified Lover Boy</p>
+        </div>
+    </div>
+            
+    <div class="song-list">
+      <table id="mytable">
+          <tr>
+            <th>Song</th>
+            <th colspan="2">Duration</th>
+          </tr>
+          <tr>
+            <td>Champagne Poetry</td>
+            <td>5:36</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Papi's Home</td>
+            <td>3:23</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Girls Want Girls (feat. Lil Baby)</td>
+            <td>3:59</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>In The Bible (feat. Lil Durk & Giveon)</td>
+            <td>4:57</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Love All (feat. Jay-Z)</td>
+            <td>3:50</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Fair Trade (feat. Travis Scott)</td>
+            <td>4:51</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Way 2 Sexy (feat. Future & Young Thug)</td>
+            <td>4:17</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>TSU</td>
+            <td>5:07</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>N 2 Deep (feat. Future)</td>
+            <td>3:57</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Pipe Down</td>
+            <td>4:19</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Yebba's Heartbreak</td>
+            <td>4:21</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>No Friends In The Industry</td>
+            <td>3:29</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Knife Talk (feat. 21 Savage & Project Pat)</td>
+            <td>2:36</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>7am On Bridle Path</td>
+            <td>3:06</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Race My Mind</td>
+            <td>4:20</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Fountains (feat. Tems)</td>
+            <td>4:13</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Get Along Better (feat. Ty Dolla $ign)</td>
+            <td>3:49</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>You Only Live Twice (feat. Lil Wayne & Rick Ross)</td>
+            <td>3:45</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>IMY2 (feat. Kid Cudi)</td>
+            <td>4:36</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Fucking Fans</td>
+            <td>3:11</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>The Remorse</td>
+            <td>5:18</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+        </table>
+    </div>
+    <script src="navbarhover.js"></script>
+
+</body>
+<br>
+<br>
+<footer>
+  <div class="footer-content">
+    <a href="index.html" style="text-decoration: none;"><h1 style="font-family: Arial, Helvetica, sans-serif; color: yellow;font-size: 25px; text-align: center;"> MOOOSIC </h1></a>
+    <div style="text-align: center;"><a href="about.html" style="text-decoration: none; color: yellow; font-family: Arial, Helvetica, sans-serif;"> ABOUT US </a></div>
+  </div>
+  <div class="footer-bottom">
+    <p style="margin-bottom: 0;">&copy; 2023 MOOSIC | All Rights Reserved</p>
+  </div>
+</footer>
+<script>
+  function sendRowData() {
+      var table = document.getElementById("mytable");
+      var rows = table.getElementsByTagName("tr");
+      for (var i = 0; i < rows.length; i++) {
+        rows[i].onclick = function() {
+          var rowData = [];
+          var cells = this.getElementsByTagName("td");
+          for (var j = 0; j < cells.length; j++) {
+            rowData.push(cells[j].innerHTML);
+          }
+          submitData(rowData[0], rowData[1]);
+        }
+      }
+
+    };
+      function submitData(name, duration) {
+            const albumDiv = document.querySelector('.album');
+            const albumP = albumDiv.querySelector('p');
+            const albumText = albumP.textContent;
+            dict = {name:name, duration:duration, album:albumText}
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'http://127.0.0.1:5000/', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.mode = 'no-cors'; 
+            xhr.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    alert(this.responseText);
+                }
+            };
+            console.log(dict)
+            xhr.send(JSON.stringify(dict));
+      };
+      
+</script>
+</html>

@@ -1,0 +1,264 @@
+/* Style for the artist info section */
+body {
+    background: linear-gradient(#2874f0, #000000);
+    background-attachment: fixed;
+    color: white;
+    font-family: -apple-system, 
+      BlinkMacSystemFont, 
+      "Segoe UI", 
+      Roboto, 
+      Oxygen-Sans, 
+      Ubuntu, 
+      Cantarell, 
+      "Helvetica Neue", 
+      sans-serif;
+  }
+
+  .rating input[type="radio"] {
+    display: none;
+  }
+  
+  .rating label {
+    color: #ddd;
+    font-size: 3em;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .rating label:before {
+    content: "\2605";
+  }
+  
+  .rating input[type="radio"]:checked ~ label {
+    color: rgb(249, 241, 7);
+  }
+  
+  .rating input[type="radio"]:checked ~ label:nth-of-type(-n+1) {
+    color: rgb(249, 241, 7);
+  }
+  
+  
+  .artist-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    margin-top: 60px;
+  }
+  
+  .artist-info img {
+    max-width: 60%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 40px;
+  }
+  
+  .artist-info p {
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 1.4;
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+  
+  /* Style for the countdown timer */
+  :root {
+    --smaller: .75;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: -apple-system, 
+      BlinkMacSystemFont, 
+      "Segoe UI", 
+      Roboto, 
+      Oxygen-Sans, 
+      Ubuntu, 
+      Cantarell, 
+      "Helvetica Neue", 
+      sans-serif;
+  }
+  
+  .container {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h1 {
+    font-weight: bold;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  li {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+  }
+  
+  li span {
+    font-size: 4.5rem;
+  }
+  
+  .emoji {
+    display: none;
+    padding: 1rem;
+  }
+  
+  .emoji span {
+    font-size: 4rem;
+    padding: 0 .5rem;
+  }
+  
+  @media all and (max-width: 768px) {
+    h1 {
+      font-size: calc(1.5rem * var(--smaller));
+    }
+    
+    li {
+      font-size: calc(1.125rem * var(--smaller));
+    }
+    
+    li span {
+      font-size: calc(3.375rem * var(--smaller));
+    }
+  }
+
+   /* .review-item {
+    margin-bottom: 20px; 
+  }
+
+  
+  .review {
+    margin-bottom: 20px; 
+  }
+  
+  .review .name {
+    margin-bottom: 5px; 
+  }
+
+  #review-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  } */
+
+  
+
+  textarea {
+    background: linear-gradient(#2874f0, #0e2549);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+  }
+  
+  textarea:focus {
+    outline: none;
+    box-shadow: 0 0 4px #000000;
+  }
+  
+  
+
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  
+  th {
+    background-color: #2874f0;
+    color: white;
+  }
+  
+  td, th {
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .review-stars {
+    display: inline-block;
+    font-size: 24px;
+    color: #f5d52e;
+  }
+  
+  .review-text {
+    font-family: Arial, sans-serif; /* set font family */
+    font-size: 16px; /* set font size */
+    line-height: 1.5; 
+    letter-spacing: 0.5px; /* adjust letter spacing for better readability */
+  }
+
+  .submit-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  button[type="submit"] {
+    background: linear-gradient(#0e2549, #000000);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background: linear-gradient(#000000, #0e2549);
+  }
+  
+  
+  
+
+  .reviews-table-container {
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
+  
+  .reviews-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .reviews-table th, .reviews-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .reviews-table tbody tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+
+  
+
+
+  
+  

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Melophobia</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="shortcut icon" href="logo.png">
+    <style>
+        /* Center the images */
+        .albums {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+    .album {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .album img {
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        cursor: pointer;
+        object-fit: cover;
+    }
+
+    .album p {
+        margin-top: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #faea35;
+    }
+
+    .album {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .album img {
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+        cursor: pointer;
+        object-fit: cover;
+    }
+
+    .album p {
+        margin-top: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #faea35;
+    }
+
+    .album a{
+            text-decoration: none;
+        }
+</style>
+</head>
+
+
+<body style="padding-bottom: 0%;">
+  <style>
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+    img {
+        max-width: 100%
+    }
+    .image {
+        flex-basis: 40%
+    }
+    .text {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+</style>
+<nav>
+    <div class="logo">
+        <div class="container">
+            <div class="image">
+                <img src = "logo.png" width="40">
+            </div>
+            <div class="text">
+                <h1> MOOOSIC </h1>
+            </div>
+        </div>
+    </div>
+    <div>
+        <a href="index.html">Home</a>
+        <a class="active" href="artists.html">Artists Page</a>
+        <a href="fav-artist.html">Artist's Spotlight</a>
+        <a href="search.html"> Search </a>
+        <a href="about.html">About</a>
+        <a href="playlist.html">Playlist</a>
+    </div>
+</nav>
+
+    <div class="albums">
+        <div class="album">
+            <img src="https://upload.wikimedia.org/wikipedia/en/1/1e/Cage_the_Elephant_Melophobia.jpg" alt="Melophobia">
+            <p>Melophobia</p>
+        </div>
+    </div>
+            
+    <div class="song-list">
+      <table class="mytable">
+          <tr>
+            <th>Song</th>
+            <th colspan="2">Duration</th>
+          </tr>
+          <tr>
+            <td>Spying</td>
+            <td>2:53</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Take It or Leave It</td>
+            <td>3:28</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Halo</td>
+            <td>3:38</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Black Widow</td>
+            <td>3:08</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Hypocrite</td>
+            <td>2:51</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Telescope</td>
+            <td>3:47</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>It's Just Forever</td>
+            <td>3:43</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Take It to Me</td>
+            <td>3:59</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Halo (Reprise)</td>
+            <td>1:54</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Teeth</td>
+            <td>4:08</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Cigarette Daydreams</td>
+            <td>3:29</td>
+            <td>
+              <form>
+                <input type="button" value="Add to Playlist" onclick="sendRowData()">
+              </form>
+            </td>
+          </tr>
+        </table>
+    </div>
+    <script src="navbarhover.js"></script>
+
+</body>
+<br>
+<br>
+<footer>
+  <div class="footer-content">
+    <a href="index.html" style="text-decoration: none;"><h1 style="font-family: Arial, Helvetica, sans-serif; color: yellow;font-size: 25px; text-align: center;"> MOOOSIC </h1></a>
+    <div style="text-align: center;"><a href="about.html" style="text-decoration: none; color: yellow; font-family: Arial, Helvetica, sans-serif;"> ABOUT US </a></div>
+  </div>
+  <div class="footer-bottom">
+    <p style="margin-bottom: 0;">&copy; 2023 MOOSIC | All Rights Reserved</p>
+  </div>
+</footer>
+<script>
+  function sendRowData() {
+      var table = document.getElementById("mytable");
+      var rows = table.getElementsByTagName("tr");
+      for (var i = 0; i < rows.length; i++) {
+        rows[i].onclick = function() {
+          var rowData = [];
+          var cells = this.getElementsByTagName("td");
+          for (var j = 0; j < cells.length; j++) {
+            rowData.push(cells[j].innerHTML);
+          }
+          submitData(rowData[0], rowData[1]);
+        }
+      }
+
+    };
+      function submitData(name, duration) {
+            const albumDiv = document.querySelector('.album');
+            const albumP = albumDiv.querySelector('p');
+            const albumText = albumP.textContent;
+            dict = {name:name, duration:duration, album:albumText}
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'http://127.0.0.1:5000/', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.mode = 'no-cors'; 
+            xhr.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    alert(this.responseText);
+                }
+            };
+            console.log(dict)
+            xhr.send(JSON.stringify(dict));
+      };
+      
+</script>
+</html>

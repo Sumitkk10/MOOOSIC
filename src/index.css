@@ -1,0 +1,87 @@
+/* Zoom effect */
+.zoom {
+  transition: transform .2s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+}
+/* 
+.plaid-background {
+  background:
+      repeating-linear-gradient(
+          -45deg,
+          transparent 0,
+          transparent 25%,
+          dodgerblue 0,
+          dodgerblue 50%
+     ),
+     repeating-linear-gradient(
+          45deg,
+          transparent 0,
+          transparent 25%,
+          tomato 0,
+          tomato 50%
+      ),
+      repeating-linear-gradient(
+          transparent 0,
+          transparent 25%,
+          gold 0,
+          gold 50%
+      ), white;
+  background-blend-mode: multiply;
+  background-size: 100px 100px;
+} */
+/* Body styles */
+body {
+  height: 100%;
+  background: linear-gradient(#2874f0, #000000);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0 50px 0; /* Shorthand for top, right, bottom, left padding */
+}
+
+/* Paragraph styles */
+p {
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Table styles */
+table {
+  width: 80%;
+  margin: 40px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #1DB954; /* Spotify green */
+}
+
+tr:nth-child(even) {
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+tr:nth-child(odd) {
+  background-color: #282828; /* Spotify black */
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+

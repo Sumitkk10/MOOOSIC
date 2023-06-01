@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="shortcut icon" href="logo.png">
+    </head>
+    
+    <body style="padding-bottom: 0;">
+        <style>
+            .container {
+                display: flex;
+                align-items: center;
+                justify-content: center
+            }
+            img {
+                max-width: 100%
+            }
+            .image {
+                flex-basis: 40%
+            }
+            .text {
+                font-size: 20px;
+                padding-left: 20px;
+            }
+            .search-box {
+                display: flex;
+                padding-top: 13%;
+                justify-content: center;
+                align-items: center;
+                margin-top: 50px;
+            }
+
+            .search-wrapper {
+                position: relative;
+                display: inline-flex;
+                align-items: center;
+                background-color: yellow;
+                border-radius: 5px;
+            }
+
+            .button-with-image {
+                position: relative;
+                padding: 20px 30px;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: default;
+                overflow: hidden;
+            }
+
+            .button-with-image img {
+                position: absolute;
+                top: 0;
+                cursor: default;
+                left: 0;
+                width: 500%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 0.5;
+            }
+
+            .button-with-image:hover{
+                cursor: default;
+            }
+
+            input[type="text"] {
+                padding: 10px;
+                font-size: 18px;
+                border: none;
+                background-color: white;
+                width: 400px;
+                cursor: default;
+                margin-left: 10px;
+                box-shadow: 0px 0px 10px #e6e6e6;
+            }
+
+            button[type="submit"] {
+                border: none;
+                padding: 21px;
+                cursor: default;
+                background-color: black;
+            }
+
+            button[type="submit"]:hover {
+                color: yellow;
+                cursor: default;
+                font-size: 20px;
+            }
+        </style>
+
+        <nav>
+            <div class="logo">
+                <div class="container">
+                    <div class="image">
+                        <img src = "logo.png" width="40">
+                    </div>
+                    <div class="text">
+                        <h1> MOOOSIC </h1>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="artists.html">Artists Page</a>
+                <a href="fav-artist.html">Artist's Spotlight</a>
+                <a class = "active" href="search.html"> Search </a>
+                <a href="about.html">About</a>
+                <a href="playlist.html">Playlist</a>
+            </div>
+        </nav>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <div class="search-box">
+            <form action="/search" id="Form">
+              <div class="search-wrapper">
+                <input type="text" id="Input" placeholder="Search...">
+                <button type="submit"><i class="button-with-image"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJEAAACRCAMAAAD0BqoRAAAAY1BMVEX///8AAAD6+vrl5eXv7++UlJTS0tLW1taampqPj4+ysrLh4eGLi4s3Nzf39/dmZmZVVVVISEgvLy+mpqZ2dnZPT08JCQkZGRnDw8MpKSnLy8tAQECgoKBeXl5sbGx8fHwiIiIwwTPVAAACcElEQVR4nO2Z25aqMAyGbelwBmFkgFEB3/8pJ+Xg3jpQuMDUNev/rtSyVn+TNEnD4QAAAAAAAAAAAAAAAAAAAADAXkgv9IPAD11pW0mPE2biTh5GtvWo+FM8cIuVTT3yNMiosrYo2uw2fPtIrQlKv7SAsj1HiiJIKqfuSv1LZst1rrZJ5T94KT31hjpbEeTpvY+/zOEUWmdtQZDzTTsHcyt9cHnceg4yp23D+bVa5wH2I+frQ7W0GNJiy6mGiGjPYnk55o9uHb4Gv6gLBT1rTfGqxSAaqLmNdBUiMYcuncSOSUxPsnDw/6GDm0dLj6LtVipFVLG6jQzwvVJO00aIK48ajb8h3XRCxBxatu9Gqgu+83/c4BGqbke+RmmLopBVUSuEv/YMpayWz2vdhvQXs6ZI8sjX2v9vDb3B/njmOqvRtdZY+fZFLndrE+d10btCzUiz+kTOo2WAmo3SNT2g1q24L2m+YqRutV3ZG91sGG5ArqkLfw0yoyv+4g1IUStSccrRaCskSzmpMVvwReh7YjJrJaWvcqtV5gVQ8IrPmQMXUcsrLlaGW1qS6J66WxX3E5ujDUF9edcjrOjedEgVJ+Nki//e31MP++fxqT6f6/Djv/kfcza6I4Np6FeWj9M/asQtzUmd68Mgsgrq4/iRtYg8iyqa/HLJs9bvoycfrWYsfK9GKsdRU4B7owNZa7+ZcPQb68XfTDFKsjGNnCe9jJIc20ruuKOixt6w/ZnxZQB3k2SiebtQcsbEeXsfv02h9EYpYGhLTDNmbmRf4LL38RqFkj5r7/GidCIKrBZbAAAAAAAAAAAAAAAAAAAA8Af4AYH+E2omoNd6AAAAAElFTkSuQmCC"></i></button>
+              </div>
+            </form>
+          </div>
+          <br>
+          <br>
+          <label for = "duration-filter" style="padding-left: 31%; color: white; font-family: Arial, Helvetica, sans-serif;"> Max Duration (minutes): </label>
+          <input id = "duration-filter" type = "number" min = "0">
+          <label for = "explicit-filter" style="color: white; font-family: Arial, Helvetica, sans-serif;"> Explicit: </label>
+          <input id = "explicit-filter" type = "checkbox">
+          <button id = "apply-filters" style="font-family: Arial, Helvetica, sans-serif;"> Apply Filters </button>
+          <button id = "clear-filters" style="font-family: Arial, Helvetica, sans-serif;"> Clear Filters </button>
+          <div id = "search-results" ></div>
+          
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+          <table id="resultsTable">
+            <thead>
+              <tr>
+                <th style="color: white;">Track Name</th>
+                <th style="color: white;">Artist Name</th>
+                <th style="color: white;">Album Name</th>
+                <th style="color: white;">Album Poster</th>
+                <th style="color: white;">Audio Clip</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+          <script src="navbarhover.js"></script>
+    </body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div class="footer-content">
+          <a href="index.html" style="text-decoration: none;"><h1 style="font-family: Arial, Helvetica, sans-serif; color: yellow;font-size: 25px; text-align: center;"> MOOOSIC </h1></a>
+          <div style="text-align: center;"><a href="about.html" style="text-decoration: none; color: yellow; font-family: Arial, Helvetica, sans-serif;"> ABOUT US </a></div>
+        </div>
+        <div class="footer-bottom">
+          <p style="margin-bottom: 0;">&copy; 2023 MOOSIC | All Rights Reserved</p>
+        </div>
+    </footer>
+<script src="searchfunc.js"></script>
+</html>

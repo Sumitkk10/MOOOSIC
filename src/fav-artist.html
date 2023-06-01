@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Artist Spotlight - The Lumineers</title>
+    <link rel="stylesheet" href="fav-style.css" />
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="shortcut icon" href="logo.png">
+    <script src="https://kit.fontawesome.com/4694dfbf9d.js" crossorigin="anonymous"></script>
+  </head>
+  <body style="padding-bottom: 0;">
+    <style>
+      .container1 {
+          display: flex;
+          align-items: center;
+          justify-content: center
+      }
+      img {
+            max-width: 100%
+      }
+      .image1 {
+          flex-basis: 40%
+      }
+      .text1 {
+          font-size: 20px;
+          padding-left: 20px;
+          padding-top: 7px;
+      }
+  </style>
+    <nav>
+        <div class="logo">
+            <div class="container1">
+                <div class="image1">
+                    <img src = "logo.png" width="40">
+                </div>
+                <div class="text1">
+                    <h1> MOOOSIC </h1>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="artists.html">Artists Page</a>
+            <a class = "active" href="fav-artist.html">Artist's Spotlight</a>
+        <a href="search.html"> Search </a>
+        <a href="about.html">About</a>
+        <a href="playlist.html">Playlist</a>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <div class="bg"></div>
+    <div class="artist-info">
+      <img
+        src="https://www.rollingstone.com/wp-content/uploads/2023/03/TheLumineers.HR_..jpg"
+        alt="The Lumineers"
+      />
+      <div>
+      <h1>The Lumineers</h1>
+      <h1>About</h1>
+      <p>
+        The Lumineers are an American folk rock band formed in 2002. The band consists of Wesley Schultz, Jeremiah Fraites, and Lauren Jacobson. Their music is characterized by their use of acoustic instruments such as the guitar, mandolin, and piano, as well as their powerful harmonies and storytelling lyrics.
+      </p>
+    </div>
+      <b></b>
+    </div>
+
+
+    <div class="container">
+        <h1 id="headline">Countdown to BRIGHTSIDE</h1>
+        <div id="countdown">
+          <ul>
+            <li><span id="days"></span>days</li>
+            <li><span id="hours"></span>Hours</li>
+            <li><span id="minutes"></span>Minutes</li>
+            <li><span id="seconds"></span>Seconds</li>
+          </ul>
+        </div>
+        <div id="content" class="emoji">
+          <span>🥳</span>
+          <span>🎉</span>
+        </div>
+      </div>
+
+      <br><br><br>
+
+    <div class="reviews-container">
+    <h2>Reviews</h2>
+    <br>
+    <form id="review-form">
+      <label for="name">Name:</label>
+      <br>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <br>
+      <label for="rating">Rating:</label>
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5" required>
+        <label for="star5" class="fa-solid fa-star"></label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4" class="fa-solid fa-star"></label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3" class="fa-solid fa-star"></label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2" class="fa-solid fa-star"></label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1" class="fa-solid fa-star"></label>
+      </div>
+      <br>
+      <br>
+      <label for="review">Review:</label>
+      <br>
+      <br>
+      <textarea id="review" name="review" rows="5" required></textarea>
+      <br>
+      <br>
+      <button type="submit">Submit</button>
+      <br>
+      <br>
+      <br>
+    </form>
+    </div>
+    
+    <div class="reviews-container">
+    
+    <div class="reviews-table-container">
+    <table id="reviews-table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Rating</th>
+            <th>Review</th>
+        </tr>
+        </thead>
+        <tbody id="reviews-table-body"></tbody>
+    </table>
+    </div>
+    </div>
+    <script src="navbarhover.js"></script>
+    <script src="fav.js"></script>
+    <br>
+    <br>
+
+
+    <footer>
+        <div class="footer-content">
+          <a href="index.html" style="text-decoration: none;"><h1 style="font-family: Arial, Helvetica, sans-serif; color: yellow;font-size: 25px; text-align: center;"> MOOOSIC </h1></a>
+          <div style="text-align: center;"><a href="about.html" style="text-decoration: none; color: yellow; font-family: Arial, Helvetica, sans-serif;"> ABOUT US </a></div>
+        </div>
+        <div class="footer-bottom">
+          <p style="margin-bottom: 0;">&copy; 2023 MOOSIC | All Rights Reserved</p>
+        </div>
+    </footer>
+    
+  </body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Us</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="shortcut icon" href="logo.png">
+    </head>
+    <body style="padding-bottom: 0%;">
+        <style>
+            .container {
+                display: flex;
+                align-items: center;
+                justify-content: center
+            }
+            img {
+                max-width: 100%
+            }
+            .image {
+                flex-basis: 40%
+            }
+            .text {
+                font-size: 20px;
+                padding-left: 20px;
+            }
+        </style>
+        <nav>
+            <div class="logo">
+                <div class="container">
+                    <div class="image">
+                        <img src = "logo.png" width="40">
+                    </div>
+                    <div class="text">
+                        <h1> MOOOSIC </h1>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="artists.html">Artists Page</a>
+                <a href="fav-artist.html">Artist's Spotlight</a>
+                <a href="search.html"> Search </a>
+                <a class="active" href="about.html">About</a>
+                <a href="playlist.html">Playlist</a>
+            </div>
+        </nav>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .center {
+                display: flex;
+                margin-left: 0%;
+                margin-top: 5%;
+                align-items: center;
+                justify-content: center;
+            }
+            img {
+                vertical-align: middle;
+            }
+            .textt {
+                font-size: 20px;
+                padding-left: 60px;
+                text-align: center;
+                color: yellow;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .about-section {
+                padding: 50px;
+                text-align: center;
+                background-color: #132346;
+                color: yellow;
+            }
+            #team-section {
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: 20%;
+            }
+
+            .team-member {
+                width: 300px;
+                margin: 20px;
+                text-align: center;
+            }
+
+            .team-member img {
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .team-member h3 {
+                margin-top: 10px;
+            }
+
+            .team-member p {
+                color: grey;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+        </style>
+        <div class="about-section">
+            <h1 style="font-family: Arial, Helvetica, sans-serif;"> ABOUT US </h1>
+        </div>
+        <div class="center">
+            <img src = "logo.png">
+            <div class="textt" >
+                <h1> MOOOSIC </h1>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="about-section">
+            <p> MOOOSIC is a place where you will find all the music you need. It is an extensive collection of all songs, albums and artists. </p>
+            <p> It also contains information regarding different albums, artists and songs. </p>
+            <p> You can search whatever artist or song you like and you also have the option to rate them and comment about them. </p>
+            <p> You can also view existing comments and ratings on different songs, albums and artists.</p>
+        </div>
+        <br>
+        <h1 style="text-align:center; color: yellow; font-family: Arial, Helvetica, sans-serif;"> OUR TEAM </h1>
+        <section id="team-section">
+            <article class="team-member">
+                <img src="https://cdn.discordapp.com/attachments/766889529956237312/1093636247945232415/Safeimagekit-resized-img.png" alt="Sumit">
+                <h3 style="color: yellow; font-family: Arial, Helvetica, sans-serif;">Sumit Kumar</h3>
+                <p>Contributor</p>
+                <a href="mailto:sumit.k@research.iiit.ac.in" style="text-decoration: none;"><p style="color: yellowgreen;"> Email </p></a>
+            </article>
+            <article class="team-member">
+
+            </article>
+            <article class="team-member">
+                <img src="https://cdn.discordapp.com/attachments/766889529956237312/1093636248188493884/Safeimagekit-resized-img_1.png" alt="Abraham">
+                <h3 style="color: yellow; font-family: Arial, Helvetica, sans-serif;">Abraham Paul Elenjical</h3>
+                <p>Contributor</p>
+                <a href="mailto:sumit.k@research.iiit.ac.in" style="text-decoration: none;"><p style="color: yellowgreen;"> Email </p></a>
+            </article>
+        </section>
+        <script src="navbarhover.js"></script>
+        
+    </body>
+    <footer>
+        <div class="footer-content">
+          <a href="index.html" style="text-decoration: none;"><h1 style="font-family: Arial, Helvetica, sans-serif; color: yellow;font-size: 25px; text-align: center;"> MOOOSIC </h1></a>
+          <div style="text-align: center;"><a href="about.html" style="text-decoration: none; color: yellow; font-family: Arial, Helvetica, sans-serif;"> ABOUT US </a></div>
+        </div>
+        <div class="footer-bottom">
+          <p style="margin-bottom: 0;">&copy; 2023 MOOSIC | All Rights Reserved</p>
+        </div>
+    </footer>
+</html>

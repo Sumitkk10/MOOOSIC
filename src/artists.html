@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Artists Page</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="shortcut icon" href="logo.png">
+    <style>
+        /* Center the images */
+        .artists {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .artist {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .artist img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            cursor: pointer;
+            object-fit: cover;
+        }
+
+        .artist p {
+            margin-top: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #faea35;
+        }
+
+        .artist a{
+            text-decoration: none;
+        }
+
+        .artist a:hover {
+            text-decoration: none;
+        }
+
+        .artist img:hover {
+            opacity: 0.9;
+        }
+
+
+        .container {
+            overflow: hidden;
+        }
+       
+    </style>
+</head>
+
+<body style="padding-bottom: 0;">
+
+    <!-- Navbar -->
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+        img {
+            max-width: 100%
+        }
+        .image {
+            flex-basis: 40%
+        }
+        .text {
+            font-size: 20px;
+            padding-left: 20px;
+        }
+    </style>
+    <nav>
+        <div class="logo">
+            <div class="container">
+                <div class="image">
+                    <img src = "logo.png" width="40">
+                </div>
+                <div class="text">
+                    <h1> MOOOSIC </h1>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="index.html">Home</a>
+            <a class="active" href="artists.html">Artists Page</a>
+            <a href="fav-artist.html">Artist's Spotlight</a>
+        <a href="search.html"> Search </a>
+        <a href="about.html">About</a>
+        <a href="playlist.html">Playlist</a>
+        </div>
+    </nav>
+    <!-- Artists section -->
+    <br>
+    <br>
+    <div class="artists">
+        <div class="artist">
+            <a href="artist01-albums.html">
+                <div class="zoom">
+                <img 
+                    src="https://lh3.googleusercontent.com/jQoBIAS6JjFGpcqQY1M_Mh3AasOvFENCdVRxkgax1a0K6qiq7AgE3MbJ6Jtt-Jndcarvoawmrg66KTny=w2880-h1200-p-l90-rj"
+                    alt="Ed Sheeran"
+                />
+                </div>
+                <p>Ed Sheeran</p>
+            </a>
+        </div>
+        <div class="artist">
+            <a href="artist02-albums.html">
+                <div class="zoom">
+                <img 
+                    src="https://www.rollingstone.com/wp-content/uploads/2023/03/TheLumineers.HR_..jpg"
+                    alt="The Lumineers"
+                />
+                </div>
+                <p>The Lumineers</p>
+            </a>
+        </div>
+        <div class="artist">
+            <a href="artist03-albums.html">
+                <div class="zoom">
+                <img 
+                    src="https://www.rollingstone.com/wp-content/uploads/2022/04/drake-essay-instagram-musk.jpg?w=1581&h=1054&crop=1"
+                    alt="Drake"
+                />
+                </div>
+                <p>Drake</p>
+            </a>
+        </div>
+        <div class="artist">
+            <a href="artist04-albums.html">
+                    <div class="zoom">
+                    <img 
+                        src="https://www.rollingstone.com/wp-content/uploads/2018/06/rs-168478-1402459895altJTIAY01creditGabrielGreen.jpg"
+                        alt="Alt-j"
+                    />
+                    </div>
+                    <p>alt-J</p>
+                </a>
+                
+            </div>
+
+            <div class="artist">
+                <a href="artist05-albums.html">
+                    <div class="zoom">
+                    <img 
+                        src="https://www.unothegateway.com/wp-content/uploads/2016/01/cagetheelephant-624-1381160315.jpg"
+                        alt="Cage The Elephant"
+                    />
+                    </div>
+                    <p>Cage The Elephant</p>
+                </a>
+                
+            </div>
+    </div>
+    <script src="navbarhover.js"></script>
+    </body>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div class="footer-content">
+          <a href="index.html" style="text-decoration: none;"><h1 style="font-family: Arial, Helvetica, sans-serif; color: yellow;font-size: 25px; text-align: center;"> MOOOSIC </h1></a>
+          <div style="text-align: center;"><a href="about.html" style="text-decoration: none; color: yellow; font-family: Arial, Helvetica, sans-serif;"> ABOUT US </a></div>
+        </div>
+        <div class="footer-bottom">
+          <p style="margin-bottom: 0;">&copy; 2023 MOOSIC | All Rights Reserved</p>
+        </div>
+    </footer>
+</html>
