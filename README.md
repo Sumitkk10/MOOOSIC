@@ -3,9 +3,9 @@ A web portal for an Internet Music Database. This website has information about 
 ability to rate songs and view existing ratings, to comment on songs and view existing comments, etc.
 
 
-# DOCUMENTATION
+## DOCUMENTATION
 
-## REPOSITORY STRUCTURE
+### REPOSITORY STRUCTURE
 
 ![](https://cdn.discordapp.com/attachments/766889529956237312/1094655314546147378/image.png)
 
@@ -22,7 +22,7 @@ ability to rate songs and view existing ratings, to comment on songs and view ex
 * artists<num>-songs.html refers to the corresponding songs of albums.
 * about.html is the about page of the website.
 
-## WEBSITE
+### WEBSITE
 
 * You will have to install flask, flask_cors and sqlite3 onto your machine.
 * You can do so by using the following commands in terminal(if you are on linux) :
